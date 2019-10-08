@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/**** HEADER & NAV ****/
+header {
+    height: 65vh;
+    background-image: url(http://placekitten.com/1600/900);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-list .hamburger,
+.nav-list .signin {
+    position: relative;
+}
+
+.nav-list .hamburger ul,
+.nav-list .signin ul {
+    position: absolute;
+}
+
+.nav-list .hamburger li,
+.nav-list .signin li,
+.nav-list .no-mobile {
+    display: none;
+}
+
+.nav-list .hamburger:hover li,
+.nav-list .signin:hover li {
+    display: block;
+    background-color: white;
+}
+
+.nav-list .hamburger:hover,
+.nav-list .signin:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.nav-list .center-nav,
+.nav-list .left-nav,
+.nav-list .right-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list .left-nav li,
+.nav-list .right-nav li {
+    padding: 1rem;
+}
+
+.nav-list .hamburger li,
+.nav-list .signin li {
+    padding: 0.5rem;
+}
+
+.nav-list a,
+.nav-list li.hamburger,
+.nav-list li.signin {
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000;
+    text-transform: uppercase;
+    display: block;
+}
+
+.nav-list .hamburger ul li a,
+.nav-list .signin ul li a {
+    font-family: "Times New Roman", serif;
+    text-transform: none;
+    font-size: 1rem;
+}
+
+.nav-list .b-bot {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+@media only screen and (min-width: 1000px) {
+    header {
+        height: 100vh;
+    }
+    .nav-list .hamburger {
+        display: none;
+    }
+
+    .nav-list .no-mobile {
+        display: block;
+        padding: 1rem;
+    }
+}
