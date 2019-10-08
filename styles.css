@@ -47,7 +47,6 @@ header {
 
 .nav-list .hamburger:hover,
 .nav-list .signin:hover {
-    cursor: pointer;
     background-color: white;
 }
 
@@ -91,11 +90,13 @@ header {
     padding-bottom: 1rem;
     border-bottom: 1px solid #ccc;
 }
+
 @media only screen and (min-width: 1000px) {
     header {
         height: 100vh;
     }
-    .nav-list .hamburger {
+
+    .nav-list li.hamburger {
         display: none;
     }
 
@@ -103,4 +104,172 @@ header {
         display: block;
         padding: 1rem;
     }
+}
+
+/**** MAIN ****/
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/**** SUBSCRIPTION ****/
+
+.subscriptions {
+    height: 30vh;
+    justify-content: center;
+}
+
+.subscriptions h2 {
+    font-size: 4rem;
+}
+
+.subscriptions p {
+    font-size: 2rem;
+}
+
+.subscriptions .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.subscriptions a {
+    display: block;
+    padding: 0.75rem;
+    background-color: #1d648a;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    margin: 3px;
+    border-radius: 3px;
+}
+
+.subscriptions a:hover {
+    background-color: #0b5078
+}
+
+/**** SHOP COFFEE ****/
+
+.shop-coffee {
+    height: 35vh;
+    font-family: Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.shop-coffee h2 {
+    color: #777;
+    font-size: 2rem;
+}
+
+.shop-coffee h2 a {
+    text-decoration: none;
+    color: #e0614e;
+}
+
+.shop-coffee .coffee-background {
+    width: 100%;
+    height: 30vh;
+}
+
+.shop-coffee div a {
+    display: flex;
+    width: 95%;
+    height: 90%;
+    margin: 1rem auto;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0614e;
+    color: #fff;
+}
+
+.shop-coffee a h3 {
+    font-size: 3rem;
+}
+
+.shop-coffee a h4 {
+    font-size: 2.5rem;
+}
+
+.shop-coffee a h5 {
+    font-size: 2rem;
+    color: #f7d0cb;
+}
+
+.shop-coffee a h6 {
+    background-color: #d0412e;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem 10rem;
+}
+
+.shop-coffee a p {
+    padding-top: 2rem;
+}
+
+/**** SHOP TEA ****/
+.shop-tea {
+    height: 35vh;
+    font-family: Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.shop-tea h2 {
+    color: #777;
+    font-size: 2rem;
+}
+
+.shop-tea h2 a {
+    text-decoration: none;
+    color: #c4a3b2;
+}
+
+.shop-tea .tea-background {
+    width: 100%;
+    height: 30vh;
+}
+
+.shop-tea div a {
+    display: flex;
+    width: 95%;
+    height: 90%;
+    margin: 1rem auto;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shop-tea a h3 {
+    font-size: 3.5rem;
+    color: #c4a3b2;
+    margin-top: 1rem;
+}
+
+.shop-tea a h4 {
+    font-size: 2rem;
+    color: #ccc;
+}
+
+.shop-tea a h5 {
+    font-size: 2.5rem;
+    color: #d4b3c2;
+    margin-bottom: 5rem;
+}
+
+/**** IMAGE ARTICLES ****/
+.image-articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
