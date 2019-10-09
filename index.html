@@ -59,30 +59,31 @@
                 <a href="#">Send a gift</a>
             </div>
         </article>
-
-        <article class="content shop-coffee">
-            <h2>Shop <a href="#">Coffee</a></h2>
-            <div class="coffee-background">
-                <a href="#">
-                    <h3>Las Nubes</h3>
-                    <h4>Eugenoides</h4>
-                    <h4>2018 Harvest</h4>
-                    <h5>Colombia</h5>
-                    <h6>Reserve Lot</h6>
-                    <p>Mixed berries, tropical fruit, bubble gum</p>
-                </a>
-            </div>
-        </article>
-        <article class="content shop-tea">
-            <h2>Shop <a href="#">Tea</a></h2>
-            <div class="tea-background">
-                <a href="#">
-                    <h3>Jade Oolong</h3>
-                    <h4>Nanto, Taiwan</h4>
-                    <h5>Oolong Tea</h5>
-                </a>
-            </div>
-        </article>
+        <div class="shop-box">
+            <article class="content shop-coffee">
+                <h2>Shop <a href="#">Coffee</a></h2>
+                <div class="coffee-background">
+                    <a href="#">
+                        <h3>Las Nubes</h3>
+                        <h4>Eugenoides</h4>
+                        <h4>2018 Harvest</h4>
+                        <h5>Colombia</h5>
+                        <h6>Reserve Lot</h6>
+                        <p>Mixed berries, tropical fruit, bubble gum</p>
+                    </a>
+                </div>
+            </article>
+            <article class="content shop-tea">
+                <h2>Shop <a href="#">Tea</a></h2>
+                <div class="tea-background">
+                    <a href="#">
+                        <h3>Jade Oolong</h3>
+                        <h4>Nanto, Taiwan</h4>
+                        <h5>Oolong Tea</h5>
+                    </a>
+                </div>
+            </article>
+        </div>
         <div class="image-articles">
             <img src="http://placekitten.com/630/200" alt="A placeholder kitten">
             <article>
@@ -121,18 +122,23 @@
             <label>
                 Subscribe to our newsletter.
                 <p>Get first access to new releases, news, and updates</p>
-                <input type="email" placeholder="Email Address">
+                <input class="email" type="email" placeholder="Email Address" />
             </label>
-            <input type="submit" value="Join">
+            <input class="submit" type="submit" value="Join" />
         </form>
     </main>
 
     <footer>
         <div class="music">
             <h2>Now playing @ 7W King</h2>
-            <p>Artist – Song</p>
-            <p>Picked by Rockbot</p>
-            <img src="http://placekitten.com/25/25" alt="A placeholder kitten">
+            <div class="song-info">
+                <img src="http://placekitten.com/25/25" alt="A placeholder kitten">
+                <p>Artist – Song</p>
+            </div>
+            <div class="rockbot">
+                <p>Picked by Rockbot</p>
+                <img src="http://placekitten.com/25/25" alt="A placeholder kitten">
+            </div>
         </div>
 
         <ul class="footer-nav">
@@ -173,7 +179,7 @@
 
             <p><a href="#">info@passengercoffee.com</a>•717-455-3633</p>
         </address>
-        <a href="#">Donation Requests</a>
+        <a class="donation" href="#">Donation Requests</a>
         <img src="http://placekitten.com/100/100" alt="A placeholder kitten">
         <p>&copy; <time datetime="2019">2019</time>, <a href="#">Passenger Coffee</a></p>
     </footer>

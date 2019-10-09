@@ -95,21 +95,6 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
-@media only screen and (min-width: 1000px) {
-    header {
-        height: 100vh;
-    }
-
-    .nav-list li.hamburger {
-        display: none;
-    }
-
-    .nav-list .no-mobile {
-        display: block;
-        padding: 1rem;
-    }
-}
-
 /**** MAIN ****/
 main {
     display: flex;
@@ -124,7 +109,6 @@ main {
 }
 
 /**** SUBSCRIPTION ****/
-
 .subscriptions {
     height: 30vh;
     justify-content: center;
@@ -144,7 +128,7 @@ main {
     margin-top: 2rem;
 }
 
-.subscriptions a {
+.subscriptions .buttons a {
     display: block;
     padding: 0.75rem;
     background-color: #1d648a;
@@ -157,12 +141,17 @@ main {
     border-radius: 3px;
 }
 
-.subscriptions a:hover {
+.subscriptions .buttons a.hover {
     background-color: #0b5078
 }
 
-/**** SHOP COFFEE ****/
-
+/**** SHOP ****/
+.shop-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+}
+/* Coffee */
 .shop-coffee {
     height: 35vh;
     font-family: Helvetica, Arial, sans-serif;
@@ -221,7 +210,7 @@ main {
     padding-top: 2rem;
 }
 
-/**** SHOP TEA ****/
+/* Tea */
 .shop-tea {
     height: 35vh;
     font-family: Helvetica, Arial, sans-serif;
@@ -309,4 +298,231 @@ main {
 .multibanner img {
     display: block;
     width: 20%;
+}
+
+/**** FORM ****/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form label {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+form label p {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+form input {
+    width: 30rem;
+}
+
+form .email {
+    padding: 0.75rem;
+}
+
+form .submit {
+    background-color: #1d648a;
+    border-radius: 3px;
+    padding: 0.75rem;
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+form .submit:hover {
+    background-color: #0b5078
+}
+
+/**** FOOTER ****/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+footer a,
+footer p a {
+    text-decoration: none;
+    color: #1b658a;
+}
+
+footer a.donation {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer > img {
+    margin-bottom: 2rem;
+}
+
+footer a:hover,
+footer p a:hover {
+    color: #09456a;
+}
+
+/* Music */
+.music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.music h2 {
+    background-color: #ddd;
+    padding: 0.75rem;
+    width: 100%;
+    text-align: center;
+}
+
+.music .song-info,
+.music .rockbot {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color:
+}
+
+.music .song-info img {
+    margin-right: 0.5rem;
+}
+.music .rockbot img {
+    margin-left: 0.5rem;
+}
+
+/* Footer Nav */
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-nav ul li a {
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+    color: #1b658a;
+}
+
+.footer-nav ul li a:hover {
+    color: #09456a;
+}
+
+/* Address */
+address {
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+address p:first-child:first-line {
+    font-weight: bold;
+}
+
+address p:first-child {
+    margin-bottom: 2rem;
+}
+
+address p a {
+    text-decoration: none;
+    color: #1b658a;
+}
+
+address p a:hover {
+    color: #09456a;
+}
+
+/**** MEDIA QUERIES ****/
+@media only screen and (min-width: 500px) {
+    .music {
+        flex-direction: row;
+        width: 97%;
+        background-color: unset;
+    }
+
+    .music h2 {
+        width: unset;
+        text-align: default;
+    }
+
+    .music .rockbot {
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .footer-nav {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    header {
+        height: 100vh;
+    }
+
+    .nav-list li.hamburger {
+        display: none;
+    }
+
+    .nav-list .no-mobile {
+        display: block;
+        padding: 1rem;
+    }
+
+    .shop-coffee,
+    .shop-tea {
+        width: 50%;
+    }
+
+    .image-articles {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+        height: 100vh;
+    }
+
+    .image-articles img {
+        display: block;
+        width: 40%;
+    }
+
+    .image-articles article {
+        width: 60%;
+        padding-left: 1rem;
+    }
 }
