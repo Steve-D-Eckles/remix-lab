@@ -31,6 +31,7 @@ header {
 .nav-list .hamburger ul,
 .nav-list .signin ul {
     position: absolute;
+    top: 4rem;
 }
 
 .nav-list .hamburger li,
@@ -46,8 +47,10 @@ header {
 }
 
 .nav-list .hamburger:hover,
-.nav-list .signin:hover {
-    background-color: white;
+.nav-list .signin:hover,
+.nav-list .no-mobile:hover,
+.nav-list li:last-child:hover {
+    border-bottom: 3px solid black;
 }
 
 .nav-list .center-nav,
@@ -61,6 +64,7 @@ header {
 .nav-list .left-nav li,
 .nav-list .right-nav li {
     padding: 1rem;
+    padding-bottom: 0.25rem;
 }
 
 .nav-list .hamburger li,
@@ -272,4 +276,37 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 6rem;
+}
+
+.image-articles img,
+.image-articles article {
+    width: 100%;
+    max-width: 635px;
+}
+
+.image-articles img {
+    margin-bottom: 4rem;
+}
+
+.image-articles article {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/**** BOTTOM BANNER ****/
+.bottom-banner,
+.multibanner {
+    width: 100%;
+}
+
+.multibanner {
+    display: flex;
+}
+
+.multibanner img {
+    display: block;
+    width: 20%;
 }
