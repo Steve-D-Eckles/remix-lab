@@ -12,7 +12,7 @@ html {
 /**** HEADER & NAV ****/
 header {
     height: 65vh;
-    background-image: url(http://placekitten.com/1600/900);
+    background-image: url(images/coffee-header.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -59,6 +59,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1.5rem;
 }
 
 .nav-list .left-nav li,
@@ -183,7 +184,12 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #e0614e;
+    background: linear-gradient(161deg, #e0614e, #e0614e 50%, #f0715e 50%, #f0715e);
     color: #fff;
+}
+
+.shop-coffee div a:hover {
+    border: 1rem solid #d0513e;
 }
 
 .shop-coffee a h3 {
@@ -230,6 +236,10 @@ main {
 .shop-tea .tea-background {
     width: 100%;
     height: 30vh;
+    background-image: url(images/background-leaf.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 140px 90%;
 }
 
 .shop-tea div a {
@@ -241,6 +251,11 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: white;
+    background-image: url(images/mid-leaf.png);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
 }
 
 .shop-tea a h3 {
