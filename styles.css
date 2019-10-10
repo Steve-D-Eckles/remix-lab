@@ -281,8 +281,17 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 150vh;
     padding: 0 1rem;
     margin-bottom: 6rem;
+}
+
+.image-articles a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    height: 33%;
+    margin: 2rem 0;
 }
 
 .image-articles img,
@@ -293,11 +302,21 @@ main {
 
 .image-articles img {
     margin-bottom: 4rem;
+    height: 100%;
 }
 
 .image-articles article {
-    margin-bottom: 2rem;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem 1rem;
     font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+    transition: background-color 0.5s ease-in;
+}
+
+.image-articles a:hover article {
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 /**** BOTTOM BANNER ****/
@@ -524,20 +543,32 @@ address p a:hover {
 
     .image-articles {
         flex-flow: row wrap;
-        justify-content: space-around;
+        align-items: center;
         width: 100%;
         max-width: 750px;
         margin: 0 auto;
-        height: 100vh;
+        margin-bottom: 10rem;
+        height: auto;
+    }
+
+    .image-articles a {
+        display: flex;
+        width: 100%;
+        height: 33%;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .image-articles img {
         display: block;
-        width: 40%;
     }
 
     .image-articles article {
-        width: 60%;
+        width: 45%;
+        height: 100%;
         padding-left: 1rem;
+        bottom: unset;
+        right: 47.5px;
+
     }
 }
